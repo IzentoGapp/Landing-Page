@@ -1,0 +1,301 @@
+ /* Estilos gerais */
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  
+  /* Estilos da nav */
+  .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-menu li {
+    margin-right: 30px;
+    text-align: center;
+  }
+  
+  .nav-menu li a {
+    color: #fff; /* Define a cor do texto como branco */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+  }
+  
+  .nav-menu li a:hover {
+    color: #e306be; /* Define a cor do texto em hover */
+  }
+  
+  
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 768px) {
+    .logo img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 10px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+  
+    .nav-menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-toggle .hamburger {
+      background-color: #fff;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  }
+  
+
+  .banner {
+    text-align: center;
+    padding: 100px;
+    background-image: url('../img/grana.png'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px #3a4fd7, 0 0 20px #ff1e00, 0 0 40px #5d72ff;
+    font-family: "Press Start 2P", cursive;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .banner p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #ff9a9a;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    text-shadow: 0 0 10px #3a4fd7, 0 0 20px #6372ff, 0 0 40px #5d72ff;
+    animation: scale-in 1s ease-in-out;
+  }
+  
+  @keyframes scale-in {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      padding: 50px;
+    }
+    
+    .banner h1 {
+      font-size: 24px;
+    }
+    
+    .banner p {
+      font-size: 14px;
+    }
+  }
+
+.services {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .services p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .services ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .services li {
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .services li:hover {
+    transform: scale(1.05);
+  }
+  
+  .services li::before {
+  
+    color: #333;
+    margin-right: 10px;
+  }
+  
+
+  
+  .services li p {
+    font-size: 16px;
+    color: #555;
+  }
+/* Estilos da seção de contato */
+.contact {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .contact .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contact .contact-info p {
+    margin-right: 20px;
+  }
+  
+  .contact .contact-info p:last-child {
+    margin-right: 0;
+  }
+  
+  .contact .contact-info a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .contact .contact-info a:hover {
+    color: #666;
+  }
+
+  /* Estilos da seção "Sobre mim" */
+.sobre {
+    background-color: #e6e6e6;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .sobre h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .sobre p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  
+  /* Estilos de rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+    /* Estilo da barra de rolagem */
+    ::-webkit-scrollbar {
+        width: 7px;
+      }
+  
+      /* Track (faixa) da barra de rolagem */
+      ::-webkit-scrollbar-track {
+        background: linear-gradient(135deg, #ff4ec1, #0a0a0a);
+      }
+  
+      /* Thumb (ponteiro) da barra de rolagem */
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #5c0236, #46033a);
+        border-radius: 6px;
+      }
+  
+      /* Hover do Thumb (ponteiro) da barra de rolagem */
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #ff00ff, #ff4df6);
+      }
+  
